@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "Path3Start.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "width" : 0.27599999999999997
+  }
+}

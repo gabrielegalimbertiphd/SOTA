@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ARViewController" customModule="esameMOBIDEV" customModuleProvider="target">
+            <connections>
+                <outlet property="arView" destination="Xwk-4K-dzy" id="nY1-pt-sDm"/>
+                <outlet property="debugText" destination="5lf-mQ-dwF" id="Cj2-aW-Bhb"/>
+                <outlet property="mapImage" destination="Pdr-Zv-sXW" id="dGf-BB-lsd"/>
+                <outlet property="navArrowImage" destination="Ioy-C9-hoh" id="bra-zP-Xks"/>
+                <outlet property="textInput" destination="Nl3-JI-EP3" id="DWg-yX-UiS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xwk-4K-dzy">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <gestureRecognizers/>
+                </arView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ioy-C9-hoh">
+                    <rect key="frame" x="157" y="44" width="100" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="GvK-Mr-J0q"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="Q0q-ea-S0C"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pdr-Zv-sXW">
+                    <rect key="frame" x="0.0" y="896" width="414" height="1104"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="500" id="MOK-12-WGl"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lf-mQ-dwF">
+                    <rect key="frame" x="20" y="443" width="374" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nl3-JI-EP3">
+                    <rect key="frame" x="107" y="431" width="200" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="5mU-1W-0SF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="Nl3-JI-EP3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0eK-gr-1nB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Xwk-4K-dzy" secondAttribute="bottom" id="1kd-k5-TI9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xwk-4K-dzy" secondAttribute="trailing" id="3Jh-4G-oTq"/>
+                <constraint firstItem="Pdr-Zv-sXW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="47q-fy-7Qm"/>
+                <constraint firstItem="Pdr-Zv-sXW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="1000" id="C0P-d0-i9G"/>
+                <constraint firstItem="Xwk-4K-dzy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="LOm-PE-LOY"/>
+                <constraint firstItem="Nl3-JI-EP3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="XRI-83-9rp"/>
+                <constraint firstItem="Pdr-Zv-sXW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZXq-oY-TY4"/>
+                <constraint firstItem="Xwk-4K-dzy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fmo-uA-11d"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Pdr-Zv-sXW" secondAttribute="trailing" id="o3w-IV-3V2"/>
+                <constraint firstItem="Ioy-C9-hoh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pss-je-C0k"/>
+                <constraint firstItem="Ioy-C9-hoh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="ra5-Fd-pEo"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="e9d-0Q-O52" appends="YES" id="LNc-t4-dVR"/>
+                <outletCollection property="gestureRecognizers" destination="E25-HS-ijB" appends="YES" id="Gpj-AT-Gk5"/>
+            </connections>
+            <point key="canvasLocation" x="44.927536231884062" y="89.732142857142847"/>
+        </view>
+        <swipeGestureRecognizer direction="down" id="e9d-0Q-O52">
+            <connections>
+                <action selector="swipeDownGesture:" destination="-1" id="UAW-gw-l7r"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer direction="up" id="E25-HS-ijB">
+            <connections>
+                <action selector="swipeUpGesture:" destination="-1" id="i53-X2-Mpp"/>
+            </connections>
+        </swipeGestureRecognizer>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

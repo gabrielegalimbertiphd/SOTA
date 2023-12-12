@@ -1,0 +1,5 @@
+This project is realized by Marco Ciardullo and Me for the paper called 
+"Sonification of navigation instructions for people with visual 
+impairments".
+Main - Marco CIardullo
+Assistant - Gabriele Galimberti

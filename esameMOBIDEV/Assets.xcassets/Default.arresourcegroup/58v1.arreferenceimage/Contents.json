@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "Path2Start.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "width" : 0.27602480675894303
+  }
+}

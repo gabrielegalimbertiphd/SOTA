@@ -1,0 +1,86 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "resources" : [
+    {
+      "filename" : "0v1.arreferenceimage"
+    },
+    {
+      "filename" : "56v1.arreferenceimage"
+    },
+    {
+      "filename" : "57v1.arreferenceimage"
+    },
+    {
+      "filename" : "58v1.arreferenceimage"
+    },
+    {
+      "filename" : "59v1.arreferenceimage"
+    },
+    {
+      "filename" : "60v1.arreferenceimage"
+    },
+    {
+      "filename" : "61v1.arreferenceimage"
+    },
+    {
+      "filename" : "62v1.arreferenceimage"
+    },
+    {
+      "filename" : "63v1.arreferenceimage"
+    },
+    {
+      "filename" : "Fix1.arreferenceimage"
+    },
+    {
+      "filename" : "Fix2.arreferenceimage"
+    },
+    {
+      "filename" : "Fix3.arreferenceimage"
+    },
+    {
+      "filename" : "Fix4.arreferenceimage"
+    },
+    {
+      "filename" : "Fix5.arreferenceimage"
+    },
+    {
+      "filename" : "Fix6.arreferenceimage"
+    },
+    {
+      "filename" : "Fix7.arreferenceimage"
+    },
+    {
+      "filename" : "Fix8.arreferenceimage"
+    },
+    {
+      "filename" : "Fix9.arreferenceimage"
+    },
+    {
+      "filename" : "Fix10.arreferenceimage"
+    },
+    {
+      "filename" : "Fix11.arreferenceimage"
+    },
+    {
+      "filename" : "Fix12.arreferenceimage"
+    },
+    {
+      "filename" : "Fix13.arreferenceimage"
+    },
+    {
+      "filename" : "Son0Ping.arreferenceimage"
+    },
+    {
+      "filename" : "Son1Tick.arreferenceimage"
+    },
+    {
+      "filename" : "Son2Notes.arreferenceimage"
+    },
+    {
+      "filename" : "Stop.arreferenceimage"
+    }
+  ]
+}

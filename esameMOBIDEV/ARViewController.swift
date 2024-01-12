@@ -78,7 +78,9 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
         Link( node_u :"1", node_v :"2", radiusOfNavigationArea :2),
         Link( node_u :"2", node_v :"3", radiusOfNavigationArea :1),
         Link( node_u :"3", node_v :"4", radiusOfNavigationArea :2),
-        Link( node_u :"4", node_v :"5", radiusOfNavigationArea :1)
+        Link( node_u :"4", node_v :"5", radiusOfNavigationArea :1.5),
+        Link( node_u :"5", node_v :"6", radiusOfNavigationArea :1),
+        Link( node_u :"6", node_v :"7", radiusOfNavigationArea :1)
     ]
     
     var linksOfPaths:[String:[Link]] = [
@@ -87,30 +89,36 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
             Link( node_u :"1", node_v :"2", radiusOfNavigationArea :2),
             Link( node_u :"2", node_v :"3", radiusOfNavigationArea :1),
             Link( node_u :"3", node_v :"4", radiusOfNavigationArea :2),
-            Link( node_u :"4", node_v :"5", radiusOfNavigationArea :1)
+            Link( node_u :"4", node_v :"5", radiusOfNavigationArea :1.5),
+            Link( node_u :"5", node_v :"6", radiusOfNavigationArea :1),
+            Link( node_u :"6", node_v :"7", radiusOfNavigationArea :1)
         ],
         "Percorso2":[
             Link( node_u :"0", node_v :"1", radiusOfNavigationArea :1),
             Link( node_u :"1", node_v :"2", radiusOfNavigationArea :1.5),
             Link( node_u :"2", node_v :"3", radiusOfNavigationArea :2),
-            Link( node_u :"3", node_v :"4", radiusOfNavigationArea :1.5),
-            Link( node_u :"4", node_v :"5", radiusOfNavigationArea :1)
+            Link( node_u :"3", node_v :"4", radiusOfNavigationArea :2),
+            Link( node_u :"4", node_v :"5", radiusOfNavigationArea :1),
+            Link( node_u :"5", node_v :"6", radiusOfNavigationArea :1.5),
+            Link( node_u :"6", node_v :"7", radiusOfNavigationArea :1)
         ],
         "Percorso3":[
-            Link( node_u :"0", node_v :"1", radiusOfNavigationArea :1.5),
+            Link( node_u :"0", node_v :"1", radiusOfNavigationArea :2),
             Link( node_u :"1", node_v :"2", radiusOfNavigationArea :1.5),
-            Link( node_u :"2", node_v :"3", radiusOfNavigationArea :2),
-            Link( node_u :"3", node_v :"4", radiusOfNavigationArea :1),
+            Link( node_u :"2", node_v :"3", radiusOfNavigationArea :1),
+            Link( node_u :"3", node_v :"4", radiusOfNavigationArea :1.5),
             Link( node_u :"4", node_v :"5", radiusOfNavigationArea :2),
-            Link( node_u :"5", node_v :"6", radiusOfNavigationArea :2)
+            Link( node_u :"5", node_v :"6", radiusOfNavigationArea :1),
+            Link( node_u :"6", node_v :"7", radiusOfNavigationArea :1)
         ],
         "Percorso4":[
             Link( node_u :"0", node_v :"1", radiusOfNavigationArea :1),
             Link( node_u :"1", node_v :"2", radiusOfNavigationArea :2),
             Link( node_u :"2", node_v :"3", radiusOfNavigationArea :2),
             Link( node_u :"3", node_v :"4", radiusOfNavigationArea :1.5),
-            Link( node_u :"4", node_v :"5", radiusOfNavigationArea :2),
-            Link( node_u :"5", node_v :"6", radiusOfNavigationArea :1)
+            Link( node_u :"4", node_v :"5", radiusOfNavigationArea :1.5),
+            Link( node_u :"5", node_v :"6", radiusOfNavigationArea :1),
+            Link( node_u :"6", node_v :"7", radiusOfNavigationArea :1)
         ]
     ]
     

@@ -134,6 +134,9 @@ struct MapMatrix {
     private var maxLng : Double
     
     init(walls: [Wall], works: [Work], connectors: [Connector], interests: [InterestPoint], obstacles: [Obstacle], paths: [Path]){
+        print("walls",walls)
+        print("works",works)
+        print("paths",paths)
         minLat = walls[0].coordinate[0].lat
         minLng = walls[0].coordinate[0].lng
         maxLat = walls[0].coordinate[0].lat

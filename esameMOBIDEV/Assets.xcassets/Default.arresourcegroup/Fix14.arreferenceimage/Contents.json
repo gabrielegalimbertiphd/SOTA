@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "Fix5.jpg",
+      "filename" : "5.jpg",
       "idiom" : "universal"
     }
   ],
@@ -10,6 +10,6 @@
     "version" : 1
   },
   "properties" : {
-    "width" : 88.5
+    "width" : 0.28999999999999998
   }
 }

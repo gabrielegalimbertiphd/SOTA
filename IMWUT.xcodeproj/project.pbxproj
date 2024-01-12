@@ -42,7 +42,7 @@
 		A9FC191D26E7B5CA005DFC2E /* p.wav in Resources */ = {isa = PBXBuildFile; fileRef = A9FC191A26E7B5CA005DFC2E /* p.wav */; };
 		A9FC191E26E7B5CA005DFC2E /* con_p.wav in Resources */ = {isa = PBXBuildFile; fileRef = A9FC191B26E7B5CA005DFC2E /* con_p.wav */; };
 		D50934952AF53A5C0096507F /* UNImap.json in Resources */ = {isa = PBXBuildFile; fileRef = D50934942AF53A5C0096507F /* UNImap.json */; };
-		D56652C72B512E1D009A74E0 /* UNImapCortile7.json in Resources */ = {isa = PBXBuildFile; fileRef = D56652C62B512E1D009A74E0 /* UNImapCortile7.json */; };
+		D56652C92B5166D2009A74E0 /* UNImapCortile7.json in Resources */ = {isa = PBXBuildFile; fileRef = D56652C82B5166D2009A74E0 /* UNImapCortile7.json */; };
 		D5C84F2A2AFD48D100EF5673 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C84F292AFD48D100EF5673 /* Log.swift */; };
 /* End PBXBuildFile section */
 
@@ -105,7 +105,7 @@
 		A9FC191A26E7B5CA005DFC2E /* p.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = p.wav; sourceTree = "<group>"; };
 		A9FC191B26E7B5CA005DFC2E /* con_p.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = con_p.wav; sourceTree = "<group>"; };
 		D50934942AF53A5C0096507F /* UNImap.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UNImap.json; sourceTree = "<group>"; };
-		D56652C62B512E1D009A74E0 /* UNImapCortile7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = UNImapCortile7.json; path = ../../UNImapCortile7.json; sourceTree = "<group>"; };
+		D56652C82B5166D2009A74E0 /* UNImapCortile7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UNImapCortile7.json; sourceTree = SOURCE_ROOT; };
 		D5C84F292AFD48D100EF5673 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,7 +199,7 @@
 				A982CA9D270CB11900A70E37 /* Storyboard.storyboard */,
 				A98BB0722719768600356B71 /* Oscillator.swift */,
 				A98BB0742719783B00356B71 /* Synth.swift */,
-				D56652C62B512E1D009A74E0 /* UNImapCortile7.json */,
+				D56652C82B5166D2009A74E0 /* UNImapCortile7.json */,
 				D50934942AF53A5C0096507F /* UNImap.json */,
 			);
 			path = esameMOBIDEV;
@@ -354,7 +354,7 @@
 				A9FC191E26E7B5CA005DFC2E /* con_p.wav in Resources */,
 				A985702726E4E28100B66431 /* D4.wav in Resources */,
 				A94C7730270B369300E78668 /* ShortDing.mp3 in Resources */,
-				D56652C72B512E1D009A74E0 /* UNImapCortile7.json in Resources */,
+				D56652C92B5166D2009A74E0 /* UNImapCortile7.json in Resources */,
 				A985702526E4E28100B66431 /* F4.wav in Resources */,
 				A9FC191C26E7B5CA005DFC2E /* mus_p.wav in Resources */,
 				A9FC191626E7A41C005DFC2E /* Tick.mp3 in Resources */,

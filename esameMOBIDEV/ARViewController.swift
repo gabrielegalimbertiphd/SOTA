@@ -61,6 +61,7 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
     public var range : Int = 30
     public var angularDifference : Float = 0.0
     public var direction : String = ""
+    public var directionLateral : String = ""
     public var radiusOfNavigationArea : Float = 1.0
     public var distanceFromNextPoint : Float = 0.0
     public var lateralDistance : Float = 0.0
@@ -370,7 +371,9 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
             var num_walk=audioController.num_walk
             var num_lateral=audioController.num_lateral
                     
-            let text="\(timestamp);\(currentX_map);\(currentY_map);\(currentZ_map);\(currentROLL);\(currentPITCH);\(currentYAW);\(lastMarkerSeen);\(canFixHappen);\(x_fixing_gap_map);\(y_fixing_gap_map);\(angle_fix);\(rototraslFix);\(anglePath);\(angle);\(angularDifference);\(direction);\(range);\(nextNode);\(target_x_map);\(target_y_map);\(distanceFromNextPoint);\(node_v);\(node_u);\(radiusOfNavigationArea);\(length_closest_edge);\(distanceFromCurrentEdge);\(dxFromCurrentEdge);\(dyFromCurrentEdge);\(state);\(audioController.lastText);\(audioController.previousThingSaid);\(startLog);\(audioController.startSonification);\(audioController.readInstruction);\(version_setup);\(self.pathFinder.currentPath);\(num_turn);\(num_walk);\(num_lateral)"
+            var sonifiedDistance = distanceFromNextPoint
+            
+            let text="\(timestamp);\(currentX_map);\(currentY_map);\(currentZ_map);\(currentROLL);\(currentPITCH);\(currentYAW);\(lastMarkerSeen);\(canFixHappen);\(x_fixing_gap_map);\(y_fixing_gap_map);\(angle_fix);\(rototraslFix);\(anglePath);\(angle);\(angularDifference);\(direction);\(range);\(range);\(nextNode);\(target_x_map);\(target_y_map);\(distanceFromNextPoint);\(node_v);\(node_u);\(radiusOfNavigationArea);\(length_closest_edge);\(distanceFromCurrentEdge);\(dxFromCurrentEdge);\(dyFromCurrentEdge);\(directionLateral);\(state);\(sonifiedDistance);\(audioController.lastText);\(audioController.previousThingSaid);\(startLog);\(audioController.startSonification);\(audioController.readInstruction);\(version_setup);\(self.pathFinder.currentPath);\(num_turn);\(num_walk);\(num_lateral)"
             
             log.logAsync(logDescription: text)
             
@@ -515,12 +518,12 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
         let userPathDistanceInfo = self.distanceFromPathInMeters()
         if !self.isUserInPath(distance: userPathDistanceInfo.distance) && self.audioController.lastText == "Prosegui dritto" {
             //self.audioController.say("Spostati leggermente a \(userPathDistanceInfo.direction)")
-            self.audioController.say("Spostati a \(userPathDistanceInfo.direction)")
+            self.audioController.say("Spostati a \(userPathDistanceInfo.directionLateral)")
         }
     }
     
-    private func distanceFromPathInMeters() -> (distance: Float, direction: String) {
-        guard currentPoint > 0 && self.navigator.path != nil else {return (0, "")}
+    private func distanceFromPathInMeters() -> (distance: Float, direction: String, directionLateral: String) {
+        guard currentPoint > 0 && self.navigator.path != nil else {return (0, "", "")}
         let previousPoint = self.navigator.path![currentPoint-1]
         let nextPoint = self.navigator.path![currentPoint]
         
@@ -542,9 +545,14 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
         //------------
         angularDifference = angle-anglePath
         direction = angularDifference>0 && angularDifference < Float.pi ? "Sinistra":"Destra" ///Indica direzione in cui far spostare l'utente (e.g. se utente è a destra del percorso allora direction = "Sinistra")
+        
+        var angleFromCurrentPointOnEdge = (atan2(dyFromCurrentEdge, dxFromCurrentEdge)+(Float.pi*2)).truncatingRemainder(dividingBy: Float.pi*2)
+        
+        directionLateral = angularDifference>0 && angularDifference < Float.pi ? "Sinistra":"Destra" //angleFromCurrentPointOnEdge>0 && angleFromCurrentPointOnEdge < Float.pi ? "Sinistra":"Destra"
+        
         self.navigator.distanceFromPath = direction == "Sinistra" ? lateralDistance:-lateralDistance
         self.navigator.distanceFromPath = lateralDistance
-        return (lateralDistance, direction)
+        return (lateralDistance, direction, directionLateral)
     }
     
     // QUESTO DEFINISCE LA NAVIGATION AREA

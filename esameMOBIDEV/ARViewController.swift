@@ -47,7 +47,7 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
     private let navigator = Navigator()
     private var logger : Logger!
     private var canFixHappen : Bool = true
-    
+    public var timestampStart : Int = 0
     
     public var lastMarkerSeen : String = ""
     public var angle_fix : Float = 0.0
@@ -325,7 +325,7 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
         
         if startLog {
                     
-            var timestamp = NSDate().timeIntervalSince1970
+            //var timestamp = NSDate().timeIntervalSince1970
             var currentX_map=frame.camera.transform.columns.3.x
             var currentY_map=frame.camera.transform.columns.3.z
             var currentZ_map=frame.camera.transform.columns.3.y
@@ -373,7 +373,10 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
                     
             var sonifiedDistance = distanceFromNextPoint
             
-            let text="\(timestamp);\(currentX_map);\(currentY_map);\(currentZ_map);\(currentROLL);\(currentPITCH);\(currentYAW);\(lastMarkerSeen);\(canFixHappen);\(x_fixing_gap_map);\(y_fixing_gap_map);\(angle_fix);\(rototraslFix);\(anglePath);\(angle);\(angularDifference);\(direction);\(range);\(range);\(nextNode);\(target_x_map);\(target_y_map);\(distanceFromNextPoint);\(node_v);\(node_u);\(radiusOfNavigationArea);\(length_closest_edge);\(distanceFromCurrentEdge);\(dxFromCurrentEdge);\(dyFromCurrentEdge);\(directionLateral);\(state);\(sonifiedDistance);\(audioController.lastText);\(audioController.previousThingSaid);\(startLog);\(audioController.startSonification);\(audioController.readInstruction);\(version_setup);\(self.pathFinder.currentPath);\(num_turn);\(num_walk);\(num_lateral)"
+            let num_path:String = self.pathFinder.currentPath?.replacingOccurrences(of: "Percorso", with: "") ?? ""
+            let timestamp:Int = Int(NSDate().timeIntervalSince1970*1000) - self.timestampStart //  milliseconds
+            // MARK: SAVE DATA
+            let text="\(timestamp);\(currentX_map);\(currentY_map);\(currentZ_map);\(currentROLL);\(currentPITCH);\(currentYAW);\(lastMarkerSeen);\(canFixHappen);\(x_fixing_gap_map);\(y_fixing_gap_map);\(angle_fix);\(rototraslFix.debugDescription.replacingOccurrences(of: "simd_float4x4(", with: "").replacingOccurrences(of: ")", with: ""));\(anglePath);\(angle);\(angularDifference);\(direction);\(range);\(range);\(nextNode);\(target_x_map);\(target_y_map);\(distanceFromNextPoint);\(node_v);\(node_u);\(radiusOfNavigationArea);\(length_closest_edge);\(distanceFromCurrentEdge);\(dxFromCurrentEdge);\(dyFromCurrentEdge);\(directionLateral);\(state);\(sonifiedDistance);\(audioController.lastText);\(audioController.previousThingSaid);\(startLog);\(audioController.startSonification);\(audioController.readInstruction);bsc;\(num_path);\(num_turn);\(num_walk);\(num_lateral)"
             
             log.logAsync(logDescription: text)
             

@@ -333,16 +333,16 @@
        }
     ],
     "works": [
-    {
+     {
         "id":56,
         "floorid":107,
         "imageversion":1,
-        "lat":45.47601468111488, "lng":9.231060913884885,
+        "lat":45.47601468111488, "lng":9.231080913884885,
         "title":"Percorso1Inizio",
         "author":"Unimi",
-        "width":0.203,
-        "height":0.25,
-        "rotation":270
+        "width":0.40,
+        "height":0.297,
+        "rotation":90
      },
      {
         "id":2,
@@ -351,8 +351,8 @@
         "lat":45.47595422979954, "lng":9.231071412854488,
         "title":"Fix1Percorso1",
         "author":"Unimi",
-        "width":0.2,
-        "height":0.206,
+        "width":0.80,
+        "height":0.535,
         "rotation":180
      },
      {
@@ -362,8 +362,8 @@
         "lat":45.475955674268064, "lng":9.231479770655579,
         "title":"Fix2Percorso1",
         "author":"Unimi",
-        "width":0.267,
-        "height":0.18,
+        "width":0.745,
+        "height":0.56,
         "rotation":90
      },
      {
@@ -373,8 +373,8 @@
         "lat":45.47590499056795, "lng":9.231483404631414,
         "title":"Fix3Percorso1",
         "author":"Unimi",
-        "width":0.2,
-        "height":0.206,
+        "width":0.80,
+        "height":0.535,
         "rotation":180
      },
      {
@@ -384,8 +384,8 @@
         "lat":45.47591263556492, "lng":9.232210002415783,
         "title":"Fix4Percorso1",
         "author":"Unimi",
-        "width":0.267,
-        "height":0.18,
+        "width":0.745,
+        "height":0.56,
         "rotation":90
      },
      {
@@ -395,8 +395,8 @@
         "lat":45.47594226618451, "lng":9.232200130723923,
         "title":"Fix5Percorso1",
         "author":"Unimi",
-        "width":0.179,
-        "height":0.27,
+        "width":0.80,
+        "height":0.535,
         "rotation":0
      },
      {
@@ -406,8 +406,8 @@
         "lat":45.475931, "lng":9.232277,
         "title":"Percorso1Fine",
         "author":"Unimi",
-        "width":0.267,
-        "height":0.18,
+        "width":0.40,
+        "height":0.297,
         "rotation":90
      },
      {
@@ -417,8 +417,8 @@
         "lat":45.47594868810424, "lng":9.231341077724052,
         "title":"Fix6Percorso1",
         "author":"Unimi",
-        "width":0.267,
-        "height":0.18,
+        "width":0.297,
+        "height":0.40,
         "rotation":135
      },
      {
@@ -428,8 +428,8 @@
         "lat":45.47600196210299, "lng":9.23141920911365,
         "title":"Fix7Percorso1",
         "author":"Unimi",
-        "width":0.267,
-        "height":0.18,
+        "width":0.297,
+        "height":0.40,
         "rotation":45
      },
      {
@@ -439,8 +439,8 @@
         "lat":45.47588914201192, "lng":9.231522083503808,
         "title":"Fix8Percorso1",
         "author":"Unimi",
-        "width":0.267,
-        "height":0.18,
+        "width":0.297,
+        "height":0.40,
         "rotation":135
      },
      {
@@ -450,32 +450,66 @@
         "lat":45.47591855224332, "lng":9.231637686411949,
         "title":"Fix9Percorso1",
         "author":"Unimi",
-        "width":0.267,
-        "height":0.18,
+        "width":0.297,
+        "height":0.40,
         "rotation":45
      },
      {
-        "id":12,
-        "floorid":107,
-        "imageversion":1,
-        "lat":45.47592004656846, "lng":9.23174565492584,
-        "title":"Fix10Percorso1",
-        "author":"Unimi",
-        "width":0.267,
-        "height":0.18,
-        "rotation":45
+       "id":12,
+       "floorid":107,
+       "imageversion":1,
+       "lat":45.475891, "lng":9.231637686411949,
+       "title":"Fix10Percorso1",
+       "author":"Unimi",
+       "width":0.297,
+       "height":0.40,
+       "rotation":135
      },
      {
         "id":13,
         "floorid":107,
         "imageversion":1,
-        "lat":45.47591998183456, "lng":9.232011417251133,
+        "lat":45.47592004656846, "lng":9.23174565492584,
         "title":"Fix11Percorso1",
         "author":"Unimi",
-        "width":0.267,
-        "height":0.18,
+        "width":0.297,
+        "height":0.40,
         "rotation":45
      },
+     {
+        "id":14,
+        "floorid":107,
+        "imageversion":1,
+        "lat":45.475893, "lng":9.231747,
+        "title":"Fix12Percorso1",
+        "author":"Unimi",
+        "width":0.297,
+        "height":0.40,
+        "rotation":135
+     },
+     {
+        "id":15,
+        "floorid":107,
+        "imageversion":1,
+        "lat":45.47591998183456, "lng":9.232011417251133,
+        "title":"Fix13Percorso1",
+        "author":"Unimi",
+        "width":0.297,
+        "height":0.40,
+        "rotation":45
+     },
+     {
+        "id":15,
+        "floorid":107,
+        "imageversion":1,
+        "lat":45.475896, "lng":9.232015,
+        "title":"Fix14Percorso1",
+        "author":"Unimi",
+        "width":0.297,
+        "height":0.40,
+        "rotation":135
+     },
+
      {
         "id":58,
         "floorid":107,
@@ -483,8 +517,8 @@
         "lat":45.475411, "lng":9.233129,
         "title":"Percorso2Inizio",
         "author":"Unimi",
-        "width":0.267,
-        "height":0.18,
+        "width":0.297,
+        "height":0.40,
         "rotation":90
      },
      {
@@ -494,8 +528,8 @@
          "lat":45.475462, "lng":9.233113,
          "title":"Fix1Percorso2",
          "author":"Unimi",
-         "width":0.2,
-         "height":0.206,
+         "width":0.80,
+         "height":0.535,
          "rotation":0
      },
      {
@@ -505,19 +539,19 @@
          "lat":45.475459, "lng":9.233173,
          "title":"Fix2Percorso2",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
+         "width":0.745,
+         "height":0.56,
          "rotation":90
      },
      {
          "id":17,
          "floorid":107,
          "imageversion":1,
-         "lat":45.47595372331703, "lng":9.233140380212769,
+         "lat":45.475961, "lng":9.233121,
          "title":"Fix3Percorso2",
          "author":"Unimi",
-         "width":0.2,
-         "height":0.206,
+         "width":0.80,
+         "height":0.535,
          "rotation":0
      },
      {
@@ -527,8 +561,8 @@
          "lat":45.47594755394359, "lng":9.232878404610588,
          "title":"Fix4Percorso2",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
+         "width":0.745,
+         "height":0.56,
          "rotation":270
      },
      {
@@ -538,8 +572,8 @@
          "lat":45.47602741986321, "lng":9.23285184186717,
          "title":"Fix5Percorso2",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
+         "width":0.80,
+         "height":0.535,
          "rotation":0
      },
      {
@@ -549,54 +583,110 @@
         "lat":45.476022, "lng":9.232982,
         "title":"Percorso2Fine",
         "author":"Unimi",
-        "width":0.2,
-        "height":0.206,
+        "width":0.40,
+        "height":0.297,
         "rotation":90
      },
      {
         "id":21,
         "floorid":107,
         "imageversion":1,
-        "lat":45.47546191518201, "lng":9.233110625922784,
+        "lat":45.475579, "lng":9.233129,
         "title":"Fix6Percorso2",
         "author":"Unimi",
-        "width":0.267,
-        "height":0.18,
+        "width":0.297,
+        "height":0.40,
         "rotation":315
      },
      {
         "id":22,
         "floorid":107,
         "imageversion":1,
-        "lat":45.47564881733374, "lng":9.233106205666003,
+        "lat":45.475658, "lng":9.233128,
         "title":"Fix7Percorso2",
         "author":"Unimi",
-        "width":0.267,
-        "height":0.18,
+        "width":0.297,
+        "height":0.40,
         "rotation":315
      },
      {
         "id":23,
         "floorid":107,
         "imageversion":1,
-        "lat":45.47572632781614, "lng":9.233189047259497,
+        "lat":45.475731, "lng":9.233191,
         "title":"Fix8Percorso2",
         "author":"Unimi",
-        "width":0.267,
-        "height":0.18,
+        "width":0.297,
+        "height":0.40,
         "rotation":45
      },
      {
         "id":24,
         "floorid":107,
         "imageversion":1,
-        "lat":45.47593460379449, "lng":9.233102445259838,
+        "lat":45.475750, "lng":9.233126,
         "title":"Fix9Percorso2",
         "author":"Unimi",
-        "width":0.267,
-        "height":0.18,
+        "width":0.297,
+        "height":0.40,
         "rotation":315
      },
+     {
+        "id":24,
+        "floorid":107,
+        "imageversion":1,
+        "lat":45.475867, "lng":9.233161,
+        "title":"Fix10Percorso2",
+        "author":"Unimi",
+        "width":0.297,
+        "height":0.40,
+        "rotation":45
+     },
+     {
+        "id":24,
+        "floorid":107,
+        "imageversion":1,
+        "lat":45.475935, "lng":9.233104,
+        "title":"Fix11Percorso2",
+        "author":"Unimi",
+        "width":0.297,
+        "height":0.40,
+        "rotation":315
+     },
+     {
+        "id":24,
+        "floorid":107,
+        "imageversion":1,
+        "lat":45.475920, "lng":9.232946,
+        "title":"Fix12Percorso2",
+        "author":"Unimi",
+        "width":0.297,
+        "height":0.40,
+        "rotation":315
+     },
+     {
+        "id":24,
+        "floorid":107,
+        "imageversion":1,
+        "lat":45.476063, "lng":9.232922,
+        "title":"Fix13Percorso2",
+        "author":"Unimi",
+        "width":0.297,
+        "height":0.40,
+        "rotation":315
+     },
+     {
+        "id":24,
+        "floorid":107,
+        "imageversion":1,
+        "lat":45.475534, "lng":9.233168,
+        "title":"Fix14Percorso2",
+        "author":"Unimi",
+        "width":0.297,
+        "height":0.40,
+        "rotation":45
+     },
+
      {
         "id":60,
         "floorid":107,
@@ -604,8 +694,8 @@
         "lat":45.47636851969001, "lng":9.231503364942254,
         "title":"Percorso3Inizio",
         "author":"Unimi",
-        "width":0.2,
-        "height":0.206,
+        "width":0.297,
+        "height":0.40,
         "rotation":0
      },
      {
@@ -615,8 +705,8 @@
          "lat": 45.476332 , "lng": 9.232046,
          "title":"Fix1Percorso3",
          "author":"Unimi",
-         "width":0.2,
-         "height":0.206,
+         "width":0.80,
+         "height":0.535,
          "rotation":90
      },
      {
@@ -626,8 +716,8 @@
          "lat":45.476485813344606, "lng":9.232037430464837,
          "title":"Fix2Percorso3",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
+         "width":0.745,
+         "height":0.56,
          "rotation":0
      },
      {
@@ -637,8 +727,8 @@
          "lat":45.47648860638524, "lng":9.232200553738236,
          "title":"Fix3Percorso3",
          "author":"Unimi",
-         "width":0.2,
-         "height":0.206,
+         "width":0.80,
+         "height":0.535,
          "rotation":90
      },
      {
@@ -648,8 +738,8 @@
          "lat":45.476567, "lng":9.232157,
          "title":"Fix4Percorso3",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
+         "width":0.745,
+         "height":0.56,
          "rotation":0
      },
      {
@@ -659,8 +749,8 @@
          "lat":45.476561, "lng":9.232281,
          "title":"Fix5Percorso3",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
+         "width":0.80,
+         "height":0.535,
          "rotation":90
      },
      {
@@ -670,30 +760,19 @@
         "lat": 45.476631, "lng":9.232278,
         "title":"Percorso3Fine",
         "author":"Unimi",
-        "width":0.267,
-        "height":0.18,
+        "width":0.40,
+        "height":0.297,
         "rotation":0
-     },
-     {
-        "id":32,
-        "floorid":107,
-        "imageversion":1,
-        "lat":45.476561339319936, "lng":9.232289159311964,
-        "title":"Fix6Percorso3",
-        "author":"Unimi",
-        "width":0.267,
-        "height":0.18,
-        "rotation":90
      },
      {
          "id":33,
          "floorid":107,
          "imageversion":1,
          "lat":45.47637213371508, "lng":9.231681642892841,
-         "title":"Fix7Percorso3",
+         "title":"Fix6Percorso3",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
+         "width":0.297,
+         "height":0.40,
          "rotation":45
      },
      {
@@ -701,10 +780,10 @@
          "floorid":107,
          "imageversion":1,
          "lat":45.476373035751536, "lng":9.231753448577683,
-         "title":"Fix8Percorso3",
+         "title":"Fix7Percorso3",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
+         "width":0.297,
+         "height":0.40,
          "rotation":45
      },
      {
@@ -712,10 +791,10 @@
          "floorid":107,
          "imageversion":1,
          "lat":45.4763288097805, "lng":9.231775480618525,
-         "title":"Fix9Percorso3",
+         "title":"Fix8Percorso3",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
+         "width":0.297,
+         "height":0.40,
          "rotation":135
      },
      {
@@ -723,10 +802,10 @@
          "floorid":107,
          "imageversion":1,
          "lat":45.476372852732716, "lng":9.231906620333142,
-         "title":"Fix10Percorso3",
+         "title":"Fix9Percorso3",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
+         "width":0.297,
+         "height":0.40,
          "rotation":45
      },
      {
@@ -734,10 +813,10 @@
          "floorid":107,
          "imageversion":1,
          "lat":45.47641524064648, "lng":9.232006169236557,
-         "title":"Fix11Percorso3",
+         "title":"Fix10Percorso3",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
+         "width":0.297,
+         "height":0.40,
          "rotation":315
      },
      {
@@ -745,12 +824,35 @@
          "floorid":107,
          "imageversion":1,
          "lat":45.47649585569512, "lng":9.232097293961667,
-         "title":"Fix12Percorso3",
+         "title":"Fix11Percorso3",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
+         "width":0.297,
+         "height":0.40,
          "rotation":45
      },
+     {
+         "id":38,
+         "floorid":107,
+         "imageversion":1,
+         "lat":45.476553, "lng":9.232236,
+         "title":"Fix12Percorso3",
+         "author":"Unimi",
+         "width":0.297,
+         "height":0.40,
+         "rotation":135
+     },
+     {
+         "id":38,
+         "floorid":107,
+         "imageversion":1,
+         "lat":45.476454, "lng":9.232098,
+         "title":"Fix13Percorso3",
+         "author":"Unimi",
+         "width":0.297,
+         "height":0.40,
+         "rotation":135
+     },
+
      {
         "id":62,
         "floorid":107,
@@ -769,19 +871,19 @@
          "lat":45.47442568717276, "lng":9.233584438720968,
          "title":"Fix1Percorso4",
          "author":"Unimi",
-         "width":0.18,
-         "height":0.267,
+         "width":0.80,
+         "height":0.535,
          "rotation":270
      },
      {
          "id":41,
          "floorid":107,
          "imageversion":1,
-         "lat":45.47457142185511, "lng":9.23357794811685,
+         "lat":45.47457142185511, "lng":9.23358794811685,
          "title":"Fix2Percorso4",
          "author":"Unimi",
-         "width":0.18,
-         "height":0.267,
+         "width":0.745,
+         "height":0.56,
          "rotation":0
      },
      {
@@ -791,8 +893,8 @@
          "lat":45.474562373286745, "lng":9.2332062559712,
          "title":"Fix3Percorso4",
          "author":"Unimi",
-         "width":0.18,
-         "height":0.267,
+         "width":0.80,
+         "height":0.535,
          "rotation":270
      },
      {
@@ -802,41 +904,52 @@
          "lat":45.47477392161547, "lng":9.233226869318079,
          "title":"Fix4Percorso4",
          "author":"Unimi",
-         "width":0.18,
-         "height":0.267,
+         "width":0.745,
+         "height":0.56,
          "rotation":0
      },
      {
          "id":44,
          "floorid":107,
          "imageversion":1,
-         "lat":45.474774, "lng":9.233571,
+         "lat":45.474745, "lng":9.233579,
          "title":"Fix5Percorso4",
          "author":"Unimi",
-         "width":0.18,
-         "height":0.267,
+         "width":0.80,
+         "height":0.535,
          "rotation":90
      },
      {
         "id":63,
         "floorid":107,
         "imageversion":1,
-        "lat":45.474809, "lng":9.233579,
+        "lat":45.474782, "lng":9.233570,
         "title":"Percorso4Fine",
         "author":"Unimi",
-        "width":0.18,
-        "height":0.267,
+        "width":0.297,
+        "height":0.40,
         "rotation":0
      },
      {
          "id":45,
          "floorid":107,
          "imageversion":1,
-         "lat":45.474528923214955, "lng":9.233583441068092,
+         "lat":45.474535, "lng":9.233658,
          "title":"Fix6Percorso4",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
+         "width":0.297,
+         "height":0.40,
+         "rotation":45
+     },
+     {
+         "id":47,
+         "floorid":107,
+         "imageversion":1,
+         "lat":45.47457498561605, "lng":9.233458560204076,
+         "title":"Fix7Percorso4",
+         "author":"Unimi",
+         "width":0.297,
+         "height":0.40,
          "rotation":315
      },
      {
@@ -844,22 +957,11 @@
          "floorid":107,
          "imageversion":1,
          "lat":45.474544784232094, "lng":9.233447099449204,
-         "title":"Fix7Percorso4",
-         "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
-         "rotation":225
-     },
-     {
-         "id":47,
-         "floorid":107,
-         "imageversion":1,
-         "lat":45.47457498561605, "lng":9.233458560204076,
          "title":"Fix8Percorso4",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
-         "rotation":315
+         "width":0.297,
+         "height":0.40,
+         "rotation":225
      },
      {
          "id":48,
@@ -868,8 +970,8 @@
          "lat":45.47456721226495, "lng":9.233285072159958,
          "title":"Fix9Percorso4",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
+         "width":0.297,
+         "height":0.40,
          "rotation":315
      },
      {
@@ -879,30 +981,19 @@
          "lat":45.47457731051643, "lng":9.233241896417558,
          "title":"Fix10Percorso4",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
+         "width":0.297,
+         "height":0.40,
          "rotation":45
      },
      {
          "id":50,
          "floorid":107,
          "imageversion":1,
-         "lat":45.474685665210956, "lng":9.233207453237029,
+         "lat":45.474677, "lng":9.233252,
          "title":"Fix11Percorso4",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
-         "rotation":315
-     },
-     {
-         "id":51,
-         "floorid":107,
-         "imageversion":1,
-         "lat":45.474769393073686, "lng":9.233334801138081,
-         "title":"Fix12Percorso4",
-         "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
+         "width":0.297,
+         "height":0.40,
          "rotation":45
      },
      {
@@ -910,11 +1001,22 @@
          "floorid":107,
          "imageversion":1,
          "lat":45.4747390223986, "lng":9.233310972823542,
+         "title":"Fix12Percorso4",
+         "author":"Unimi",
+         "width":0.297,
+         "height":0.40,
+         "rotation":135
+     },
+     {
+         "id":51,
+         "floorid":107,
+         "imageversion":1,
+         "lat":45.474777, "lng":9.233363,
          "title":"Fix13Percorso4",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
-         "rotation":135
+         "width":0.297,
+         "height":0.40,
+         "rotation":45
      },
      {
          "id":53,
@@ -923,9 +1025,20 @@
          "lat":45.474775483828076, "lng":9.23351341163022,
          "title":"Fix14Percorso4",
          "author":"Unimi",
-         "width":0.267,
-         "height":0.18,
+         "width":0.297,
+         "height":0.40,
          "rotation":45
+     },
+     {
+         "id":53,
+         "floorid":107,
+         "imageversion":1,
+         "lat":45.474740, "lng":9.233513,
+         "title":"Fix15Percorso4",
+         "author":"Unimi",
+         "width":0.297,
+         "height":0.40,
+         "rotation":135
      }
      ],
     "connectors": [],
@@ -971,7 +1084,7 @@
                  "lat":45.475459, "lng":9.233163
               },
               {
-                 "lat":45.47595372331703, "lng":9.233140380212769
+                 "lat":45.475951, "lng":9.233121
               },
               {
                  "lat":45.47594755394359, "lng":9.232888404610588
@@ -1029,10 +1142,10 @@
                   "lat":45.47476392161547, "lng":9.233226869318079
                },
                {
-                 "lat":45.474774, "lng":9.233581
+                 "lat":45.474745, "lng":9.233569
                },
                {
-                 "lat":45.474799, "lng":9.233579
+                 "lat":45.474772, "lng":9.233570
                }
             ]
         }

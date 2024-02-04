@@ -110,10 +110,10 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
         ],
         "Percorso4":[
             Link( node_u :"0", node_v :"1", radiusOfNavigationArea :1),
-            Link( node_u :"1", node_v :"2", radiusOfNavigationArea :3),
+            Link( node_u :"1", node_v :"2", radiusOfNavigationArea :2),
             Link( node_u :"2", node_v :"3", radiusOfNavigationArea :3),
             Link( node_u :"3", node_v :"4", radiusOfNavigationArea :2),
-            Link( node_u :"4", node_v :"5", radiusOfNavigationArea :2),
+            Link( node_u :"4", node_v :"5", radiusOfNavigationArea :3),
             Link( node_u :"5", node_v :"6", radiusOfNavigationArea :1)
         ],
         "Prova":[
@@ -325,12 +325,12 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
         if startLog {
                     
             //var timestamp = NSDate().timeIntervalSince1970
-            var currentX_map=frame.camera.transform.columns.3.x
-            var currentY_map=frame.camera.transform.columns.3.z
-            var currentZ_map=frame.camera.transform.columns.3.y
-            var currentROLL=frame.camera.eulerAngles.x
-            var currentPITCH=frame.camera.eulerAngles.z
-            var currentYAW=frame.camera.eulerAngles.y
+            let currentX_map=frame.camera.transform.columns.3.x
+            let currentY_map=frame.camera.transform.columns.3.z
+            let currentZ_map=frame.camera.transform.columns.3.y
+            let currentROLL=frame.camera.eulerAngles.x
+            let currentPITCH=frame.camera.eulerAngles.z
+            let currentYAW=frame.camera.eulerAngles.y
             //lastMarkerSeen = self.lastMarkerSeen
             //locationProvider.fixPosition = canFixHappen
             //x_fixing_gap_map=

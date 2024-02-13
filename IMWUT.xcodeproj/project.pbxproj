@@ -556,7 +556,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"esameMOBIDEV/Preview Content\"";
-				DEVELOPMENT_TEAM = 6FY3S3KXBV;
+				DEVELOPMENT_TEAM = KRT5P7KG4Z;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = esameMOBIDEV/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
@@ -564,7 +564,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gab.imwut.23;
+				PRODUCT_BUNDLE_IDENTIFIER = gab.imwut.24;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -580,7 +580,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"esameMOBIDEV/Preview Content\"";
-				DEVELOPMENT_TEAM = 6FY3S3KXBV;
+				DEVELOPMENT_TEAM = KRT5P7KG4Z;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = esameMOBIDEV/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
@@ -588,7 +588,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gab.imwut.23;
+				PRODUCT_BUNDLE_IDENTIFIER = gab.imwut.24;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

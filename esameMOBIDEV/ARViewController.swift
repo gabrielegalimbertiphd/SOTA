@@ -132,6 +132,8 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
     lazy var lateralDistanceLabel = UILabel()
     lazy var targetNodeLabel = UILabel()
     
+    lazy var radiusLabel = UILabel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -203,6 +205,11 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
         lateralDistanceLabel.text = "lat dist: 0"
         lateralDistanceLabel.textColor = UIColor.black
         view.addSubview(lateralDistanceLabel)
+        
+        radiusLabel.frame = CGRect(x: 10, y: 0, width: 300, height: 600)
+        radiusLabel.text = "radius: "
+        radiusLabel.textColor = UIColor.black
+        view.addSubview(radiusLabel)
 
     }
     
@@ -348,6 +355,8 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
                     
             var nextNode = self.currentPoint
             
+            radiusOfNavigationArea = links[self.currentPoint-1].radiusOfNavigationArea ?? 1.0
+            
             var target_x_map = self.navigator.path![currentPoint].row
             var target_y_map = self.navigator.path![currentPoint].col
             //var distance = distanceFromNextPoint
@@ -387,6 +396,8 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
             distance_from_next_target_label.text="Dist: \(reduceResolution(value: distanceFromNextPoint, 100))"
             directionLabel.text="Dir: \(direction)"
             lateralDistanceLabel.text="lat dist: \(reduceResolution(value: distanceFromCurrentEdge, 100))"
+            
+            radiusLabel.text="radius: \(radiusOfNavigationArea)"
             
         }
         
@@ -484,7 +495,7 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
         if distanceNextTurn < radiusOfNavigationArea {
             if self.audioController.lastText != "Prosegui dritto" || distanceNextTurn < radiusOfNavigationArea {
                 print("current point", self.currentPoint, "radiusOfNavigationArea",radiusOfNavigationArea,"before")
-                radiusOfNavigationArea = links[self.currentPoint].radiusOfNavigationArea ?? 1.0
+                radiusOfNavigationArea = links[self.currentPoint-1].radiusOfNavigationArea ?? 1.0
                 currentPoint = currentPoint+1
                 
                 print("current point", self.currentPoint, "radiusOfNavigationArea",radiusOfNavigationArea,"after")

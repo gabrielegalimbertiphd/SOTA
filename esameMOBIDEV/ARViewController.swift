@@ -240,9 +240,11 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
             self.canFixHappen = false
             lastMarkerSeen = ""
         }
+        print(imgAnchor.name!)
         
         self.anchorTracked = true
         self.navigationController(path: pathFinder.getPath(markerName: imgAnchor.name!))
+
         links = linksOfPaths[self.pathFinder.currentPath ?? "Percorso1"] ?? links
         self.mapDrawer.drawWorkOnMap(row: work.row, col: work.col)
     }

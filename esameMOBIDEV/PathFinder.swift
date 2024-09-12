@@ -71,6 +71,8 @@ class PathFinder {
             return (self.paths.first(where: {$0.name == "Percorso1"})!.coordinate, "Percorso1")
         } else if markerName == "58v1" && currentPath == nil {
             self.currentPath = "Percorso2"
+            print("P2")
+            
             return (self.paths.first(where: {$0.name == "Percorso2"})!.coordinate, "Percorso2")
         } else if markerName == "60v1" && currentPath == nil {
             self.currentPath = "Percorso3"
@@ -80,11 +82,13 @@ class PathFinder {
             return (self.paths.first(where: {$0.name == "Percorso4"})!.coordinate, "Percorso4")
         } else if (markerName == "57v1" && currentPath == "Percorso1") || (markerName == "59v1" && currentPath == "Percorso2") || (markerName == "61v1" && currentPath == "Percorso3") ||  (markerName == "87v1" && currentPath == "Percorso4") || markerName == "Stop"{
             self.currentPath = nil
+            print("P4")
             return ([], "Stop")
         } else if (markerName == "0v1" && currentPath == nil){
             currentPath = "Prova"
             return ([], "Prova")
         }
+        print("no")
         return (nil, "")
     }
 }

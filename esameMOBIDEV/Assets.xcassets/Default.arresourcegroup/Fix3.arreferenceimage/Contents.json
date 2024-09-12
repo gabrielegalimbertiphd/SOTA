@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "Fix3.jpeg",
+      "filename" : "Fix3.jpg",
       "idiom" : "universal"
     }
   ],
@@ -10,6 +10,6 @@
     "version" : 1
   },
   "properties" : {
-    "width" : 0.80000000000000004
+    "width" : 0.745
   }
 }

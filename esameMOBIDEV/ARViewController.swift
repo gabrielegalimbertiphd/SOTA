@@ -166,6 +166,7 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
         
         self.audioController.changeSonification("Son1Tick")
         
+        /*
         x_user.frame = CGRect(x: 240, y: 0, width: 300, height: 400)
         x_user.text = "X: 0"
         x_user.textColor = UIColor.black
@@ -210,7 +211,7 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
         radiusLabel.text = "radius: "
         radiusLabel.textColor = UIColor.black
         view.addSubview(radiusLabel)
-
+         */
     }
     
     func reduceResolution(value: Float , _ resolution: Float) -> Float {
@@ -390,6 +391,7 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
             
             log.logAsync(logDescription: text)
             
+            /*
             x_user.text="X: \(reduceResolution(value: currentX_map, 100))"
             y_user.text="Y: \(reduceResolution(value: currentY_map, 100))"
             yaw_user.text="Yaw: \(reduceResolution(value: currentYAW*180/Float.pi, 100))"
@@ -400,7 +402,7 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
             lateralDistanceLabel.text="lat dist: \(reduceResolution(value: distanceFromCurrentEdge, 100))"
             
             radiusLabel.text="radius: \(radiusOfNavigationArea)"
-            
+            */
         }
         
     }

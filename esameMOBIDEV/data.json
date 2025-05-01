@@ -1,0 +1,48 @@
+{
+  "links": [
+    { "node_u": "0", "node_v": "1", "radiusOfNavigationArea": 1 },
+    { "node_u": "1", "node_v": "2", "radiusOfNavigationArea": 3 },
+    { "node_u": "2", "node_v": "3", "radiusOfNavigationArea": 2 },
+    { "node_u": "3", "node_v": "4", "radiusOfNavigationArea": 3 },
+    { "node_u": "4", "node_v": "5", "radiusOfNavigationArea": 2 },
+    { "node_u": "5", "node_v": "6", "radiusOfNavigationArea": 1 }
+  ],
+  "linksOfPaths": {
+    "Percorso1": [
+      { "node_u": "0", "node_v": "1", "radiusOfNavigationArea": 1 },
+      { "node_u": "1", "node_v": "2", "radiusOfNavigationArea": 3 },
+      { "node_u": "2", "node_v": "3", "radiusOfNavigationArea": 2 },
+      { "node_u": "3", "node_v": "4", "radiusOfNavigationArea": 3 },
+      { "node_u": "4", "node_v": "5", "radiusOfNavigationArea": 2 },
+      { "node_u": "5", "node_v": "6", "radiusOfNavigationArea": 1 }
+    ],
+    "Percorso2": [
+      { "node_u": "0", "node_v": "1", "radiusOfNavigationArea": 1 },
+      { "node_u": "1", "node_v": "2", "radiusOfNavigationArea": 2 },
+      { "node_u": "2", "node_v": "3", "radiusOfNavigationArea": 3 },
+      { "node_u": "3", "node_v": "4", "radiusOfNavigationArea": 3 },
+      { "node_u": "4", "node_v": "5", "radiusOfNavigationArea": 1 },
+      { "node_u": "5", "node_v": "6", "radiusOfNavigationArea": 2 }
+    ],
+    "Percorso3": [
+      { "node_u": "0", "node_v": "1", "radiusOfNavigationArea": 3 },
+      { "node_u": "1", "node_v": "2", "radiusOfNavigationArea": 2 },
+      { "node_u": "2", "node_v": "3", "radiusOfNavigationArea": 1 },
+      { "node_u": "3", "node_v": "4", "radiusOfNavigationArea": 2 },
+      { "node_u": "4", "node_v": "5", "radiusOfNavigationArea": 3 },
+      { "node_u": "5", "node_v": "6", "radiusOfNavigationArea": 1 }
+    ],
+    "Percorso4": [
+      { "node_u": "0", "node_v": "1", "radiusOfNavigationArea": 1 },
+      { "node_u": "1", "node_v": "2", "radiusOfNavigationArea": 2 },
+      { "node_u": "2", "node_v": "3", "radiusOfNavigationArea": 3 },
+      { "node_u": "3", "node_v": "4", "radiusOfNavigationArea": 2 },
+      { "node_u": "4", "node_v": "5", "radiusOfNavigationArea": 3 },
+      { "node_u": "5", "node_v": "6", "radiusOfNavigationArea": 1 }
+    ],
+    "Prova": [
+      { "node_u": "0", "node_v": "1", "radiusOfNavigationArea": 1 },
+      { "node_u": "1", "node_v": "2", "radiusOfNavigationArea": 1 }
+    ]
+  }
+}

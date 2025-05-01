@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		970B37032DC40A0700299A4D /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 970B37022DC40A0700299A4D /* data.json */; };
 		A918CB8C26D9170B00683EE5 /* Ping_Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A918CB8B26D9170B00683EE5 /* Ping_Sound.mp3 */; };
 		A91DC8702675204100548198 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91DC86F2675204100548198 /* Model.swift */; };
 		A94C7730270B369300E78668 /* ShortDing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A94C772F270B369300E78668 /* ShortDing.mp3 */; };
@@ -63,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		970B37022DC40A0700299A4D /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		A918CB8B26D9170B00683EE5 /* Ping_Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ping_Sound.mp3; sourceTree = "<group>"; };
 		A91DC86F2675204100548198 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A94C772F270B369300E78668 /* ShortDing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ShortDing.mp3; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				A9EDDF942673B00600E35E96 /* Info.plist */,
 				A9EDDF912673B00600E35E96 /* Preview Content */,
 				A9EDDFB62673B0AB00E35E96 /* ARViewController.swift */,
+				970B37022DC40A0700299A4D /* data.json */,
 				A91DC86F2675204100548198 /* Model.swift */,
 				A98BC4E626833C16003A71A0 /* PathFinder.swift */,
 				A98D11B2269C936200D3AA92 /* MapDrawer.swift */,
@@ -346,6 +349,7 @@
 				A918CB8C26D9170B00683EE5 /* Ping_Sound.mp3 in Resources */,
 				A9EDDF932673B00600E35E96 /* Preview Assets.xcassets in Resources */,
 				A985702A26E4E28100B66431 /* A4.wav in Resources */,
+				970B37032DC40A0700299A4D /* data.json in Resources */,
 				A985702B26E4E28100B66431 /* C4.wav in Resources */,
 				A9FC191E26E7B5CA005DFC2E /* con_p.wav in Resources */,
 				A985702726E4E28100B66431 /* D4.wav in Resources */,

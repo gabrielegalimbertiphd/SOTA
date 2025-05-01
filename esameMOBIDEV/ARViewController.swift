@@ -9,7 +9,7 @@ import UIKit
 import RealityKit
 import ARKit
 
-struct Link : Equatable {
+struct Link : Equatable, Codable {
     var node_u : String
     var node_v : String
     var radiusOfNavigationArea : Float
@@ -74,7 +74,10 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
     
     public var version_setup : String = "basic"
     
-    var links: [Link] = [
+    var links: [Link] = []
+    var linksOfPaths: [String: [Link]] = [:]
+    /*
+     var links: [Link] = [
         Link( node_u :"0", node_v :"1", radiusOfNavigationArea :1),
         Link( node_u :"1", node_v :"2", radiusOfNavigationArea :3),
         Link( node_u :"2", node_v :"3", radiusOfNavigationArea :2),
@@ -120,7 +123,7 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
             Link( node_u :"0", node_v :"1", radiusOfNavigationArea :1),
             Link( node_u :"1", node_v :"2", radiusOfNavigationArea :1),
         ]
-    ]
+    ]*/
     
     lazy var x_user = UILabel()
     lazy var y_user = UILabel()
@@ -136,6 +139,37 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let url = Bundle.main.url(forResource: "data", withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: url)
+                let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]
+
+                // Decodifica "links"
+                if let linksArray = json?["links"] as? [[String: Any]] {
+                    let linksData = try JSONSerialization.data(withJSONObject: linksArray)
+                    links = try JSONDecoder().decode([Link].self, from: linksData)
+                }
+
+                // Decodifica "linksOfPaths"
+                if let pathsDict = json?["linksOfPaths"] as? [String: [[String: Any]]] {
+                    for (key, linkArray) in pathsDict {
+                        let linkData = try JSONSerialization.data(withJSONObject: linkArray)
+                        let pathLinks = try JSONDecoder().decode([Link].self, from: linkData)
+                        linksOfPaths[key] = pathLinks
+                    }
+                }
+
+                print("Links: \(links.count)")
+                print("Percorso1: \(linksOfPaths["Percorso1"]?.count ?? 0)")
+
+            } catch {
+                print("Errore: \(error)")
+            }
+        } else {
+            print("File JSON non trovato.")
+        }
+
 
         debugText.text = ""
         

@@ -13,7 +13,7 @@ class AudioController {
     private var tickPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource: "Tick", ofType: "mp3")!))
     private var dingPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource: "ShortDing", ofType: "mp3")!))
     private var notePlayer = AVAudioPlayer()
-    private let voice = AVSpeechSynthesisVoice(language: "it-IT")!
+    private let voice = AVSpeechSynthesisVoice(language: "en-US")!// "it-IT")!
     private var synthesizer = AVSpeechSynthesizer()
     var lastText = ""
     private var beeping = false
@@ -26,6 +26,7 @@ class AudioController {
     private var timeLastDing = NSDate().timeIntervalSince1970-7
     public var lastThingSaid = ""
     public var previousThingSaid = ""
+    var translate_text:String = ""
     
     public var readInstruction : Bool = false
     
@@ -57,7 +58,29 @@ class AudioController {
             num_lateral=num_lateral+1
         }
         
-        let utterance = AVSpeechUtterance(string: actualText)
+        if actualText == "Destinazione raggiunta" {
+            translate_text = "Destination reached"
+        } else if actualText.contains("spostati a")  {
+            if actualText=="Spostati a destra"{
+                translate_text = "Move on Right"
+            } else if actualText=="Spostati a sinistra"{
+                translate_text = "Move on Left"
+            }
+        } else if actualText.contains("Gira a")  {
+            if actualText=="Gira a destra"{
+                translate_text = "Turn Right"
+            } else if actualText=="Gira a sinistra"{
+                translate_text = "Turn Left"
+            }
+        } else if actualText.contains("circa") {
+            translate_text = "Go ahead for one meter"
+        } else if actualText.contains("Prosegui") {
+            translate_text = "Go ahead for \(Int(distanceFromTurn!).description) meters"
+        } else {
+            translate_text = ""
+        }
+        
+        let utterance = AVSpeechUtterance(string: translate_text)
         
         utterance.rate = 0.5
         utterance.pitchMultiplier = 0.8
@@ -215,7 +238,7 @@ class AudioController {
             case "Son1Tick":
                 if self.selectedSonification != 1 {
                     self.selectedSonification = 1
-                    self.say("Sonificazione intermittente attiva")
+                    // self.say("Sonificazione intermittente attiva")
                     do {
                         try Synth.shared.audioEngine.start()
                         Synth.shared.setWaveformTo(Oscillator.square)

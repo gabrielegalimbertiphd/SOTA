@@ -438,7 +438,7 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
         self.logger.destinationReached()
         self.pathFinder.currentPath = nil
         self.audioController.lastText = "Destinazione raggiunta"
-        self.audioController.say("Destinazione raggiunta", important: true)
+        self.audioController.say("Destination reached", important: true)
         Synth.shared.volume = 0
         startLog=false
     }
@@ -535,7 +535,13 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
         let userPathDistanceInfo = self.distanceFromPathInMeters()
         if !self.isUserInPath(distance: userPathDistanceInfo.distance) && self.audioController.lastText == "Prosegui dritto" {
             //self.audioController.say("Spostati leggermente a \(userPathDistanceInfo.direction)")
-            self.audioController.say("Spostati a \(userPathDistanceInfo.directionLateral)")
+            //self.audioController.say("Spostati a \(userPathDistanceInfo.directionLateral)")
+            var direction_translate:String = "Left"
+            if userPathDistanceInfo.directionLateral=="Destra"{
+                direction_translate = "Right"
+            }
+            
+            self.audioController.say("Move on \(direction_translate)")
         }
     }
     

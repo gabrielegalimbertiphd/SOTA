@@ -690,7 +690,7 @@ class ARViewController: UIViewController, ARSessionDelegate, UITextFieldDelegate
     }
     
     func saveData(){
-        log.file = "prova_\(NSDate().timeIntervalSince1970).txt"
+        log.file = "\(NSDate().timeIntervalSince1970).txt"
         log.destinationReached(exit_from_app: false)
     }
 }

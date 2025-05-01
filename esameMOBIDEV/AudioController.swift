@@ -58,6 +58,7 @@ class AudioController {
             num_lateral=num_lateral+1
         }
         
+        // # translate from italian to english
         if actualText == "Destinazione raggiunta" {
             translate_text = "Destination reached"
         } else if actualText.contains("spostati a")  {
@@ -72,10 +73,12 @@ class AudioController {
             } else if actualText=="Gira a sinistra"{
                 translate_text = "Turn Left"
             }
-        } else if actualText.contains("circa") {
-            translate_text = "Go ahead for one meter"
         } else if actualText.contains("Prosegui") {
-            translate_text = "Go ahead for \(Int(distanceFromTurn!).description) meters"
+            if actualText.contains("circa") {
+                translate_text = "Go ahead for one meter"
+            } else {
+                translate_text = "Go ahead for \(Int(distanceFromTurn!).description) meters"
+            }
         } else {
             translate_text = ""
         }
@@ -231,7 +234,7 @@ class AudioController {
             case "Son0Ping":
                 if self.selectedSonification != 0 {
                     self.selectedSonification = 0
-                    self.say("Sonificazione ping attiva")
+                    //self.say("Sonificazione ping attiva")
                     Synth.shared.audioEngine.stop()
                 }
                 return true

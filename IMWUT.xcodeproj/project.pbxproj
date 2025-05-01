@@ -85,16 +85,16 @@
 		A9A0EE852710663500DDAB76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9A1F96A2697620000134096 /* ARViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARViewController.xib; sourceTree = "<group>"; };
 		A9B5BDFD26A32282004EFFA0 /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
-		A9EDDF862673B00500E35E96 /* esameMOBIDEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = esameMOBIDEV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9EDDF862673B00500E35E96 /* SOTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EDDF892673B00500E35E96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9EDDF8B2673B00500E35E96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A9EDDF8D2673B00500E35E96 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		A9EDDF922673B00600E35E96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A9EDDF942673B00600E35E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9EDDF992673B00600E35E96 /* esameMOBIDEVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = esameMOBIDEVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9EDDF992673B00600E35E96 /* SOTATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOTATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EDDF9D2673B00600E35E96 /* esameMOBIDEVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = esameMOBIDEVTests.swift; sourceTree = "<group>"; };
 		A9EDDF9F2673B00600E35E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9EDDFA42673B00600E35E96 /* esameMOBIDEVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = esameMOBIDEVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9EDDFA42673B00600E35E96 /* SOTAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOTAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EDDFA82673B00600E35E96 /* esameMOBIDEVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = esameMOBIDEVUITests.swift; sourceTree = "<group>"; };
 		A9EDDFAA2673B00600E35E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9EDDFB62673B0AB00E35E96 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
@@ -168,9 +168,9 @@
 		A9EDDF872673B00500E35E96 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A9EDDF862673B00500E35E96 /* esameMOBIDEV.app */,
-				A9EDDF992673B00600E35E96 /* esameMOBIDEVTests.xctest */,
-				A9EDDFA42673B00600E35E96 /* esameMOBIDEVUITests.xctest */,
+				A9EDDF862673B00500E35E96 /* SOTA.app */,
+				A9EDDF992673B00600E35E96 /* SOTATests.xctest */,
+				A9EDDFA42673B00600E35E96 /* SOTAUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -231,9 +231,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A9EDDF852673B00500E35E96 /* esameMOBIDEV */ = {
+		A9EDDF852673B00500E35E96 /* SOTA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9EDDFAD2673B00600E35E96 /* Build configuration list for PBXNativeTarget "esameMOBIDEV" */;
+			buildConfigurationList = A9EDDFAD2673B00600E35E96 /* Build configuration list for PBXNativeTarget "SOTA" */;
 			buildPhases = (
 				A9EDDF822673B00500E35E96 /* Sources */,
 				A9EDDF832673B00500E35E96 /* Frameworks */,
@@ -243,16 +243,16 @@
 			);
 			dependencies = (
 			);
-			name = esameMOBIDEV;
+			name = SOTA;
 			packageProductDependencies = (
 			);
 			productName = esameMOBIDEV;
-			productReference = A9EDDF862673B00500E35E96 /* esameMOBIDEV.app */;
+			productReference = A9EDDF862673B00500E35E96 /* SOTA.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A9EDDF982673B00600E35E96 /* esameMOBIDEVTests */ = {
+		A9EDDF982673B00600E35E96 /* SOTATests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9EDDFB02673B00600E35E96 /* Build configuration list for PBXNativeTarget "esameMOBIDEVTests" */;
+			buildConfigurationList = A9EDDFB02673B00600E35E96 /* Build configuration list for PBXNativeTarget "SOTATests" */;
 			buildPhases = (
 				A9EDDF952673B00600E35E96 /* Sources */,
 				A9EDDF962673B00600E35E96 /* Frameworks */,
@@ -263,14 +263,14 @@
 			dependencies = (
 				A9EDDF9B2673B00600E35E96 /* PBXTargetDependency */,
 			);
-			name = esameMOBIDEVTests;
+			name = SOTATests;
 			productName = esameMOBIDEVTests;
-			productReference = A9EDDF992673B00600E35E96 /* esameMOBIDEVTests.xctest */;
+			productReference = A9EDDF992673B00600E35E96 /* SOTATests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A9EDDFA32673B00600E35E96 /* esameMOBIDEVUITests */ = {
+		A9EDDFA32673B00600E35E96 /* SOTAUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9EDDFB32673B00600E35E96 /* Build configuration list for PBXNativeTarget "esameMOBIDEVUITests" */;
+			buildConfigurationList = A9EDDFB32673B00600E35E96 /* Build configuration list for PBXNativeTarget "SOTAUITests" */;
 			buildPhases = (
 				A9EDDFA02673B00600E35E96 /* Sources */,
 				A9EDDFA12673B00600E35E96 /* Frameworks */,
@@ -281,9 +281,9 @@
 			dependencies = (
 				A9EDDFA62673B00600E35E96 /* PBXTargetDependency */,
 			);
-			name = esameMOBIDEVUITests;
+			name = SOTAUITests;
 			productName = esameMOBIDEVUITests;
-			productReference = A9EDDFA42673B00600E35E96 /* esameMOBIDEVUITests.xctest */;
+			productReference = A9EDDFA42673B00600E35E96 /* SOTAUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -323,9 +323,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A9EDDF852673B00500E35E96 /* esameMOBIDEV */,
-				A9EDDF982673B00600E35E96 /* esameMOBIDEVTests */,
-				A9EDDFA32673B00600E35E96 /* esameMOBIDEVUITests */,
+				A9EDDF852673B00500E35E96 /* SOTA */,
+				A9EDDF982673B00600E35E96 /* SOTATests */,
+				A9EDDFA32673B00600E35E96 /* SOTAUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -417,12 +417,12 @@
 /* Begin PBXTargetDependency section */
 		A9EDDF9B2673B00600E35E96 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A9EDDF852673B00500E35E96 /* esameMOBIDEV */;
+			target = A9EDDF852673B00500E35E96 /* SOTA */;
 			targetProxy = A9EDDF9A2673B00600E35E96 /* PBXContainerItemProxy */;
 		};
 		A9EDDFA62673B00600E35E96 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A9EDDF852673B00500E35E96 /* esameMOBIDEV */;
+			target = A9EDDF852673B00500E35E96 /* SOTA */;
 			targetProxy = A9EDDFA52673B00600E35E96 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -688,7 +688,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9EDDFAD2673B00600E35E96 /* Build configuration list for PBXNativeTarget "esameMOBIDEV" */ = {
+		A9EDDFAD2673B00600E35E96 /* Build configuration list for PBXNativeTarget "SOTA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9EDDFAE2673B00600E35E96 /* Debug */,
@@ -697,7 +697,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9EDDFB02673B00600E35E96 /* Build configuration list for PBXNativeTarget "esameMOBIDEVTests" */ = {
+		A9EDDFB02673B00600E35E96 /* Build configuration list for PBXNativeTarget "SOTATests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9EDDFB12673B00600E35E96 /* Debug */,
@@ -706,7 +706,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9EDDFB32673B00600E35E96 /* Build configuration list for PBXNativeTarget "esameMOBIDEVUITests" */ = {
+		A9EDDFB32673B00600E35E96 /* Build configuration list for PBXNativeTarget "SOTAUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9EDDFB42673B00600E35E96 /* Debug */,

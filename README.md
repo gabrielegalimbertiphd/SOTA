@@ -1,2 +1,2 @@
-# Musa Indoor Navigation
-Indoor navigation inside of museums.
+# SOTA
+State-of-the-art navigation system used for navigation test with blind people.
